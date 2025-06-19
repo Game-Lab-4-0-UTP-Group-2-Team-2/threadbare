@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqcwcd0ti0mbf"
-path="res://.godot/imported/Puerta.png-a8d46ee7ad30b5ee2646c92f60738790.ctex"
+path="res://.godot/imported/Puerta.png-8384b26821dbc44e6cf565a6c268c21d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Puerta.png"
-dest_files=["res://.godot/imported/Puerta.png-a8d46ee7ad30b5ee2646c92f60738790.ctex"]
+source_file="res://scenes/quests/story_quests/perulegend/beta_nivel01/Puerta.png"
+dest_files=["res://.godot/imported/Puerta.png-8384b26821dbc44e6cf565a6c268c21d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byh6826rodqyv"
-path="res://.godot/imported/Construcciones.png-92ab55ad46fa48c43675ffd961c278b8.ctex"
+path="res://.godot/imported/Construcciones.png-c9a45bf6f42898e1227f731f323821bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilesets/Construcciones.png"
-dest_files=["res://.godot/imported/Construcciones.png-92ab55ad46fa48c43675ffd961c278b8.ctex"]
+source_file="res://scenes/quests/story_quests/perulegend/beta_nivel01/Tilesets/Construcciones.png"
+dest_files=["res://.godot/imported/Construcciones.png-c9a45bf6f42898e1227f731f323821bb.ctex"]
 
 [params]
 

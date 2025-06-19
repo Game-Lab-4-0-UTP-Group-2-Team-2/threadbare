@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jt2rfqc41pa2"
-path="res://.godot/imported/tileset_desert.png-1ae8e0a2f1c751ed2a22ee5dcc9cfef7.ctex"
+path="res://.godot/imported/tileset_desert.png-9a59e4f2bcc94fe7aa6fd57340171626.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilesets/tileset_desert.png"
-dest_files=["res://.godot/imported/tileset_desert.png-1ae8e0a2f1c751ed2a22ee5dcc9cfef7.ctex"]
+source_file="res://scenes/quests/story_quests/perulegend/beta_nivel01/Tilesets/tileset_desert.png"
+dest_files=["res://.godot/imported/tileset_desert.png-9a59e4f2bcc94fe7aa6fd57340171626.ctex"]
 
 [params]
 

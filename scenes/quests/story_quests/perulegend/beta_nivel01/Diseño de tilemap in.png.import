@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8drvkbr55d6d"
-path="res://.godot/imported/Diseño de tilemap in.png-541ce1f7aa7f2c6bc1d1630fb706dbab.ctex"
+path="res://.godot/imported/Diseño de tilemap in.png-a20901195d1c73bfb5ab4f04113fd982.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Diseño de tilemap in.png"
-dest_files=["res://.godot/imported/Diseño de tilemap in.png-541ce1f7aa7f2c6bc1d1630fb706dbab.ctex"]
+source_file="res://scenes/quests/story_quests/perulegend/beta_nivel01/Diseño de tilemap in.png"
+dest_files=["res://.godot/imported/Diseño de tilemap in.png-a20901195d1c73bfb5ab4f04113fd982.ctex"]
 
 [params]
 
