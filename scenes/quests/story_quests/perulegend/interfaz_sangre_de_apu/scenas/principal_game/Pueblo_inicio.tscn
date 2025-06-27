@@ -1,7 +1,5 @@
-[gd_scene load_steps=25 format=4 uid="uid://2655v4sikech"]
+[gd_scene load_steps=23 format=4 uid="uid://2655v4sikech"]
 
-[ext_resource type="Theme" uid="uid://b54ni3hp0ltcf" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/resources/button_pausa_theme.tres" id="2_6eohs"]
-[ext_resource type="Script" uid="uid://4uyf3vwaaugh" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/principal_game/pausa.gd" id="2_c625m"]
 [ext_resource type="PackedScene" uid="uid://bansavitjy40o" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/arqueologo/player_01___arqueologo.tscn" id="4_tujcv"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mjoxf"]
@@ -7437,78 +7435,3 @@ tile_set = SubResource("TileSet_2jouq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
-
-[node name="Pausa" type="Node2D" parent="."]
-process_mode = 3
-script = ExtResource("2_c625m")
-
-[node name="PanelContainer" type="PanelContainer" parent="Pausa"]
-process_mode = 3
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 882.0
-offset_right = 1038.0
-offset_bottom = 116.0
-grow_horizontal = 2
-theme = ExtResource("2_6eohs")
-
-[node name="MarginContainer" type="MarginContainer" parent="Pausa/PanelContainer"]
-process_mode = 3
-layout_mode = 2
-theme_override_constants/margin_top = 30
-theme_override_constants/margin_bottom = 30
-
-[node name="paused" type="Button" parent="Pausa/PanelContainer/MarginContainer"]
-process_mode = 3
-layout_mode = 2
-text = "PAUSAR"
-
-[node name="PanelContainer2" type="PanelContainer" parent="Pausa/PanelContainer"]
-layout_mode = 2
-theme = ExtResource("2_6eohs")
-
-[node name="Popup" type="PopupMenu" parent="Pausa/PanelContainer/PanelContainer2"]
-title = "Pausa"
-initial_position = 3
-size = Vector2i(1141, 570)
-current_screen = 0
-
-[node name="GridContainer" type="GridContainer" parent="Pausa/PanelContainer/PanelContainer2/Popup"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -174.0
-offset_top = -41.5
-offset_right = 174.0
-offset_bottom = 41.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/v_separation = 50
-
-[node name="Label" type="Label" parent="Pausa/PanelContainer/PanelContainer2/Popup/GridContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-text = "PAUSA"
-
-[node name="GridContainer" type="GridContainer" parent="Pausa/PanelContainer/PanelContainer2/Popup/GridContainer"]
-process_mode = 2
-layout_mode = 2
-theme_override_constants/v_separation = 20
-
-[node name="Continuar" type="Button" parent="Pausa/PanelContainer/PanelContainer2/Popup/GridContainer/GridContainer"]
-process_mode = 3
-layout_mode = 2
-text = "Continuar
-"
-
-[node name="Regresar al menu" type="Button" parent="Pausa/PanelContainer/PanelContainer2/Popup/GridContainer/GridContainer"]
-process_mode = 3
-layout_mode = 2
-text = "Regresar al inicio"
-
-[connection signal="pressed" from="Pausa/PanelContainer/MarginContainer/paused" to="Pausa" method="_on_paused_pressed"]
-[connection signal="pressed" from="Pausa/PanelContainer/PanelContainer2/Popup/GridContainer/GridContainer/Continuar" to="Pausa" method="_on_continuar_pressed"]
-[connection signal="pressed" from="Pausa/PanelContainer/PanelContainer2/Popup/GridContainer/GridContainer/Regresar al menu" to="Pausa" method="_on_regresar_al_menu_pressed"]
