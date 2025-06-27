@@ -1,0 +1,53 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://b54ni3hp0ltcf"]
+
+[ext_resource type="FontFile" uid="uid://dav8k4bmbxh7c" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/resources/fonts/PressStart2P-Regular.ttf" id="1_swo2w"]
+[ext_resource type="Texture2D" uid="uid://cbor1xywcfglf" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/00_interfaz_inicio/resources/img/04_button.png" id="2_m23vx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_swo2w"]
+texture = ExtResource("2_m23vx")
+texture_margin_left = 15.0
+texture_margin_top = 20.0
+texture_margin_right = 15.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4frmv"]
+texture = ExtResource("2_m23vx")
+texture_margin_left = 30.0
+texture_margin_top = 20.0
+texture_margin_right = 30.0
+texture_margin_bottom = 20.0
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+modulate_color = Color(0.674815, 0.674815, 0.674815, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m23vx"]
+texture = ExtResource("2_m23vx")
+texture_margin_left = 30.0
+texture_margin_top = 20.0
+texture_margin_right = 30.0
+texture_margin_bottom = 20.0
+modulate_color = Color(0.620387, 0.159294, 0.146393, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pivas"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_swo2w"]
+bg_color = Color(0.2484, 0.2484, 0.2484, 0.509804)
+
+[resource]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 15
+Button/font_sizes/font_size = 16
+Button/fonts/font = ExtResource("1_swo2w")
+Button/styles/hover = SubResource("StyleBoxTexture_swo2w")
+Button/styles/normal = SubResource("StyleBoxTexture_4frmv")
+Button/styles/pressed = SubResource("StyleBoxTexture_m23vx")
+PanelContainer/styles/panel = SubResource("StyleBoxEmpty_pivas")
+PopupMenu/font_sizes/font_size = 50
+PopupMenu/font_sizes/title_font_size = 100
+PopupMenu/fonts/font = ExtResource("1_swo2w")
+PopupMenu/fonts/font_separator = ExtResource("1_swo2w")
+PopupMenu/fonts/title_font = ExtResource("1_swo2w")
+PopupMenu/icons/close = null
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_swo2w")

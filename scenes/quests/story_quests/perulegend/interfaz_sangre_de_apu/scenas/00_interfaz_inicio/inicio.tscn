@@ -1,0 +1,141 @@
+[gd_scene load_steps=11 format=3 uid="uid://dubsotge1ki2l"]
+
+[ext_resource type="Script" uid="uid://deet7xshihpxw" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/00_interfaz_inicio/inicio.gd" id="1_v8b2w"]
+[ext_resource type="Texture2D" uid="uid://ccs3eoy4uqdgw" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/00_interfaz_inicio/resources/img/background_01.png" id="1_xac7v"]
+[ext_resource type="Texture2D" uid="uid://cgp65eehv80xt" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/00_interfaz_inicio/resources/img/01_title_sangre_de_apu.png" id="2_ho8vk"]
+[ext_resource type="Theme" uid="uid://bnd1wq7hgukyg" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/resources/buttons_theme.tres" id="2_v8b2w"]
+[ext_resource type="Texture2D" uid="uid://b3f3r1ofkayma" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/00_interfaz_inicio/resources/img/02_title_sangre_de_apu.png" id="3_v8b2w"]
+[ext_resource type="Texture2D" uid="uid://etx7fhw8qo66" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/00_interfaz_inicio/resources/img/03_title_sangre_de_apu.png" id="4_3bc25"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4yp7"]
+atlas = ExtResource("2_ho8vk")
+region = Rect2(0, 0, 805, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4rxb"]
+atlas = ExtResource("3_v8b2w")
+region = Rect2(0, 0, 805, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msx86"]
+atlas = ExtResource("4_3bc25")
+region = Rect2(0, 0, 805, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hfu2q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4yp7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4rxb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msx86")
+}],
+"loop": true,
+"name": &"Parpadeo",
+"speed": 5.0
+}]
+
+[node name="Inicio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v8b2w")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xac7v")
+expand_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+clip_contents = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -433.0
+offset_top = 83.0
+offset_right = 433.0
+offset_bottom = 757.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme = ExtResource("2_v8b2w")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/v_separation = 50
+metadata/_edit_group_ = true
+
+[node name="title_sangre_de_APU" type="MarginContainer" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 120
+metadata/_edit_group_ = true
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/title_sangre_de_APU"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/title_sangre_de_APU/PanelContainer"]
+layout_mode = 2
+texture = ExtResource("2_ho8vk")
+
+[node name="Sangre_de_APU" type="AnimatedSprite2D" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/title_sangre_de_APU/PanelContainer"]
+position = Vector2(401, 101)
+sprite_frames = SubResource("SpriteFrames_hfu2q")
+animation = &"Parpadeo"
+autoplay = "Parpadeo"
+frame_progress = 0.763965
+
+[node name="buttons_father" type="PanelContainer" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+metadata/_edit_group_ = true
+
+[node name="buttons" type="GridContainer" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father"]
+layout_mode = 2
+theme_override_constants/v_separation = 10
+
+[node name="play_game" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons"]
+layout_mode = 2
+text = "Jugar"
+
+[node name="minigames" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons"]
+layout_mode = 2
+text = "Minijuegos"
+
+[node name="options" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons"]
+layout_mode = 2
+text = "Opciones"
+
+[node name="exit" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons"]
+layout_mode = 2
+text = "Salir"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons/play_game" to="." method="_on_play_game_pressed"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons/minigames" to="." method="_on_minigames_pressed"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/GridContainer/buttons_father/buttons/exit" to="." method="_on_exit_pressed"]

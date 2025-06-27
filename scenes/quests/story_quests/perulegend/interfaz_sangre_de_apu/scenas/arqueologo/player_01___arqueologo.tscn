@@ -1,0 +1,118 @@
+[gd_scene load_steps=15 format=3 uid="uid://bansavitjy40o"]
+
+[ext_resource type="Script" uid="uid://c6dbfsr1a88xq" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/arqueologo/scripts/player_01___arqueologo.gd" id="1_qa6kp"]
+[ext_resource type="Texture2D" uid="uid://dj3m7la4jspb0" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/arqueologo/backup-1750314549.png" id="2_o1wf5"]
+[ext_resource type="Texture2D" uid="uid://b3jf1we7whxr2" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/arqueologo/runydown.png" id="3_njpko"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwao7"]
+atlas = ExtResource("2_o1wf5")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43nbb"]
+atlas = ExtResource("2_o1wf5")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yanmo"]
+atlas = ExtResource("2_o1wf5")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68gq1"]
+atlas = ExtResource("2_o1wf5")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qedx"]
+atlas = ExtResource("3_njpko")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c32om"]
+atlas = ExtResource("3_njpko")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7jdl"]
+atlas = ExtResource("2_o1wf5")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pvl7"]
+atlas = ExtResource("2_o1wf5")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njpko"]
+atlas = ExtResource("2_o1wf5")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6v6u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwao7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43nbb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwao7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43nbb")
+}],
+"loop": true,
+"name": &"runx",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yanmo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68gq1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qedx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c32om")
+}],
+"loop": true,
+"name": &"runydown",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7jdl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6pvl7")
+}],
+"loop": true,
+"name": &"runytop",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njpko")
+}],
+"loop": true,
+"name": &"static",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1x6qj"]
+size = Vector2(54, 45)
+
+[node name="Arqueologo" type="CharacterBody2D"]
+position = Vector2(5, 1)
+script = ExtResource("1_qa6kp")
+move_speed = 200.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(11, -1)
+scale = Vector2(-1, 1)
+sprite_frames = SubResource("SpriteFrames_l6v6u")
+animation = &"runx"
+frame_progress = 0.665685
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 31.5)
+shape = SubResource("RectangleShape2D_1x6qj")
