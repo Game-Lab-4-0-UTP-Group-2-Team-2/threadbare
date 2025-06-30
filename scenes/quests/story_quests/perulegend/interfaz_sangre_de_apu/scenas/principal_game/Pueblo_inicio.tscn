@@ -1,12 +1,12 @@
 [gd_scene load_steps=23 format=4 uid="uid://2655v4sikech"]
 
 [ext_resource type="PackedScene" uid="uid://bansavitjy40o" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/arqueologo/player_01___arqueologo.tscn" id="4_tujcv"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mjoxf"]
-load_path = "res://.godot/imported/Rocas y pasto.png-c747af739b348abe13179799e3b1ad32.ctex"
+[ext_resource type="Texture2D" uid="uid://dqxnn8t2bio87" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/tilesets/Rocas y pasto.png" id="5_rocas"]
+[ext_resource type="Texture2D" uid="uid://b5dp6l5m4b643" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/tilesets/Tile map 1.0.png" id="6_tilemap"]
+[ext_resource type="Texture2D" uid="uid://bu1ajmq0led53" path="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/tilesets/Puerta.png" id="7_puerta"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_icjur"]
-texture = SubResource("CompressedTexture2D_mjoxf")
+texture = ExtResource("5_rocas")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -1033,15 +1033,12 @@ texture_region_size = Vector2i(32, 32)
 30:31/0 = 0
 31:31/0 = 0
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6eohs"]
-load_path = "res://.godot/imported/Tile map 1.0.png-69656d723576bc4b7838ed5c701c8f84.ctex"
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m25al"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hgrrm"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -1872,7 +1869,7 @@ sources/0 = SubResource("TileSetAtlasSource_icjur")
 sources/2 = SubResource("TileSetAtlasSource_hgrrm")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kch22"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -2701,7 +2698,7 @@ tile_size = Vector2i(32, 32)
 sources/1 = SubResource("TileSetAtlasSource_kch22")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q41oe"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -3755,7 +3752,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_q41oe")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_anl6m"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -4786,7 +4783,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_anl6m")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3j76f"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -5614,11 +5611,8 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_3j76f")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c625m"]
-load_path = "res://.godot/imported/Puerta.png-8384b26821dbc44e6cf565a6c268c21d.ctex"
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jbgvk"]
-texture = SubResource("CompressedTexture2D_c625m")
+texture = ExtResource("7_puerta")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -5646,7 +5640,7 @@ tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_jbgvk")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3tnqb"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -6508,7 +6502,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_3tnqb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_luxs0"]
-texture = SubResource("CompressedTexture2D_6eohs")
+texture = ExtResource("6_tilemap")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
