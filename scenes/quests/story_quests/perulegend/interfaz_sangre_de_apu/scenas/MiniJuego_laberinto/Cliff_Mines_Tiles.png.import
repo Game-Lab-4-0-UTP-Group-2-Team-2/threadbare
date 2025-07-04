@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj3m7la4jspb0"
-path="res://.godot/imported/backup-1750314549.png-9ff2945bb7c879da4ad90dd81bb0aa62.ctex"
+uid="uid://ce32grfxio010"
+path="res://.godot/imported/Cliff_Mines_Tiles.png-6c488424080ed38a4af5f7f3f9d796a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/arqueologo/backup-1750314549.png"
-dest_files=["res://.godot/imported/backup-1750314549.png-9ff2945bb7c879da4ad90dd81bb0aa62.ctex"]
+source_file="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/MiniJuego_laberinto/Cliff_Mines_Tiles.png"
+dest_files=["res://.godot/imported/Cliff_Mines_Tiles.png-6c488424080ed38a4af5f7f3f9d796a0.ctex"]
 
 [params]
 

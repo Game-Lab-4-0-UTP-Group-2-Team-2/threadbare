@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3jf1we7whxr2"
-path="res://.godot/imported/runydown.png-3218e84ffd07c606f067dca2bec0fd10.ctex"
+path="res://.godot/imported/runydown.png-4da23f2f129fdc28ed21c1835ba2b545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/arqueologo/runydown.png"
-dest_files=["res://.godot/imported/runydown.png-3218e84ffd07c606f067dca2bec0fd10.ctex"]
+source_file="res://scenes/quests/story_quests/perulegend/interfaz_sangre_de_apu/scenas/Personajes/arqueologo/runydown.png"
+dest_files=["res://.godot/imported/runydown.png-4da23f2f129fdc28ed21c1835ba2b545.ctex"]
 
 [params]
 
